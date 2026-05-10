@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		444CDABE2F6FD6C500EFA408 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 444CDABD2F6FD6C400EFA408 /* README.md */; };
+		444CDAC02F6FD6C500EFA408 /* AGENTS.md in Resources */ = {isa = PBXBuildFile; fileRef = 444CDABF2F6FD6C500EFA408 /* AGENTS.md */; };
+		444CDAC22F6FD6C500EFA408 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 444CDAC12F6FD6C500EFA408 /* LICENSE */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		444CDA5A2F6FC9F700EFA408 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +33,12 @@
 		444CDA482F6FC9F400EFA408 /* Source by Sfxx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Source by Sfxx.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		444CDA592F6FC9F700EFA408 /* Source by SfxxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Source by SfxxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		444CDA632F6FC9F700EFA408 /* Source by SfxxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Source by SfxxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		444CDABD2F6FD6C400EFA408 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		444CDABF2F6FD6C500EFA408 /* AGENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AGENTS.md; sourceTree = "<group>"; };
+		444CDAC12F6FD6C500EFA408 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		444CDAC32F6FD6C600EFA408 /* FunctionStructure.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = FunctionStructure.md; sourceTree = "<group>"; };
+		444CDAC42F6FD6C600EFA408 /* Workflow.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Workflow.md; sourceTree = "<group>"; };
+		444CDAC52F6FD6C600EFA408 /* Naming.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Naming.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -92,6 +104,10 @@
 				444CDA5C2F6FC9F700EFA408 /* Source by SfxxTests */,
 				444CDA662F6FC9F700EFA408 /* Source by SfxxUITests */,
 				444CDA492F6FC9F400EFA408 /* Products */,
+				444CDABC2F6FD64B00EFA408 /* agents */,
+				444CDABD2F6FD6C400EFA408 /* README.md */,
+				444CDABF2F6FD6C500EFA408 /* AGENTS.md */,
+				444CDAC12F6FD6C500EFA408 /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +119,16 @@
 				444CDA632F6FC9F700EFA408 /* Source by SfxxUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		444CDABC2F6FD64B00EFA408 /* agents */ = {
+			isa = PBXGroup;
+			children = (
+				444CDAC32F6FD6C600EFA408 /* FunctionStructure.md */,
+				444CDAC42F6FD6C600EFA408 /* Workflow.md */,
+				444CDAC52F6FD6C600EFA408 /* Naming.md */,
+			);
+			path = agents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +251,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				444CDABE2F6FD6C500EFA408 /* README.md in Resources */,
+				444CDAC02F6FD6C500EFA408 /* AGENTS.md in Resources */,
+				444CDAC22F6FD6C500EFA408 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,9 +320,20 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F98P3P4RC3;
 				ENABLE_APP_SANDBOX = YES;
+				ENABLE_FILE_ACCESS_DOWNLOADS_FOLDER = readwrite;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Source by Sfxx/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -336,9 +376,20 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F98P3P4RC3;
 				ENABLE_APP_SANDBOX = YES;
+				ENABLE_FILE_ACCESS_DOWNLOADS_FOLDER = readwrite;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Source by Sfxx/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
